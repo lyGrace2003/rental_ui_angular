@@ -50,8 +50,29 @@ p{
     font-weight: 400;
 }
 .table-container{
-    background-color: white;
-    width: 700px;
+    min-width: 600px;
     height: 100vh;
     margin-top: 20px;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 12pt;
+}
+table{
+    margin-top: 20px;
+    width: 100%;
+}
+.table-container thead tr{
+    text-align: center;
+    height: 40px;
+}
+.table-container th,
+.table-container td{
+    padding: 8px;
+    padding: 12px 15px;
+}
+.table-container tbody td{
+    border-bottom: 1px solid #8b8b8b;
+}
+.table-container tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
 }
