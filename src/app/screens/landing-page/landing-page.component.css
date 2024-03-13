@@ -1,6 +1,6 @@
 .body{
-    height: 100vh; /* Set the height to 100% of the viewport height */
-    display: flex; /* Set the display to flex */
+    height: 100vh;
+    display: flex; 
 }
 .main-text{
     margin-top: 130px;

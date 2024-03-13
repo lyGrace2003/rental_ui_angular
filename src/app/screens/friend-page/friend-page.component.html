@@ -1,18 +1,5 @@
 <div class="body">
-<p>Add a Friend</p>
-<div class="card">
-<form>
-    <div class="form-group">
-        <label>Name</label>
-        <input type="text" name="friendname" id="friendname" placeholder="Enter friend's name" [(ngModel)]="friendname" [ngModelOptions]="{standalone: true}">
-    </div>
-    <div class="button">
-    <button mat-raised-button color="warn" (click)="save()">Add friend</button>
-</div>
-</form>
-</div>
 <div class="table-container">
-    <p>List of Friends</p>
     <table class="table">
         <thead>
             <tr>
@@ -26,4 +13,16 @@
         </tbody>
     </table>
 </div>
+<div class="card">
+    <form>
+        <div class="input-container">
+            <div class="input-box">
+            <input type="text" name="friendname" id="friendname" placeholder="Enter friend's name" [(ngModel)]="friendname" [ngModelOptions]="{standalone: true}">
+            </div>
+        <div class="button">
+        <button mat-raised-button color="warn" (click)="save()">Add friend</button>
+    </div>
+</div>
+    </form>
+    </div>
 </div>

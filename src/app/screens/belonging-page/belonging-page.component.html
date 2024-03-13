@@ -1,16 +1,4 @@
 <div class="body">
-    <p>Add a Belonging</p>
-    <div class="card">
-    <form>
-        <div class="form-group">
-            <label>Name</label>
-            <input type="text" name="belongingname" id="belongingname" placeholder="Enter belonging" [(ngModel)]="belongingname" [ngModelOptions]="{standalone: true}">
-        </div>
-        <div class="button">
-        <button mat-raised-button color="warn" (click)="save()">Add Belonging</button>
-    </div>
-    </form>
-    </div>
     <div class="table-container">
         <p>List of Belongings</p>
         <table class="table">
@@ -26,4 +14,16 @@
             </tbody>
         </table>
     </div>
+    <div class="card">
+        <form>
+            <div class="input-container">
+                <div class="input-box">
+                <input type="text" name="belongingname" id="belongingname" placeholder="Enter belonging" [(ngModel)]="belongingname" [ngModelOptions]="{standalone: true}">
+            </div>
+            <div class="button">
+            <button mat-raised-button color="warn" (click)="save()">Add Belonging</button>
+        </div>
     </div>
+        </form>
+        </div>
+</div>
