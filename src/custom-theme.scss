@@ -1,0 +1,19 @@
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$rental_angular-primary: mat.define-palette(mat.$blue-palette);
+$rental_angular-accent: mat.define-palette(mat.$light-green-palette, A200, A100, A400);
+$rental_angular-warn: mat.define-palette(mat.$orange-palette);
+
+$rental_angular-theme: mat.define-light-theme((
+  color: (
+    primary: $rental_angular-primary,
+    accent: $rental_angular-accent,
+    warn: $rental_angular-warn,
+  ),
+  typography: mat.define-typography-config(),
+  density: 0
+));
+
+@include mat.all-component-themes($rental_angular-theme);
