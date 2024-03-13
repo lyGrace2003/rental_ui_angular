@@ -1,1 +1,29 @@
-<p>friend-page works!</p>
+<div class="body">
+<p>Add a Friend</p>
+<div class="card">
+<form>
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" name="friendname" id="friendname" placeholder="Enter friend's name" [(ngModel)]="friendname" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="button">
+    <button mat-raised-button color="warn" (click)="save()">Add friend</button>
+</div>
+</form>
+</div>
+<div class="table-container">
+    <p>List of Friends</p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let FriendItem of FriendArray">
+                <td>{{FriendItem.name}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>

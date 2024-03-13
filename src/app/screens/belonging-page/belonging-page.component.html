@@ -1,1 +1,29 @@
-<p>belonging-page works!</p>
+<div class="body">
+    <p>Add a Belonging</p>
+    <div class="card">
+    <form>
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" name="belongingname" id="belongingname" placeholder="Enter belonging" [(ngModel)]="belongingname" [ngModelOptions]="{standalone: true}">
+        </div>
+        <div class="button">
+        <button mat-raised-button color="warn" (click)="save()">Add Belonging</button>
+    </div>
+    </form>
+    </div>
+    <div class="table-container">
+        <p>List of Belongings</p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let BelongingItem of BelongingArray">
+                    <td>{{BelongingItem.name}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>

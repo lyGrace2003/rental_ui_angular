@@ -11,6 +11,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { NavbarComponent } from '../navbar/navbar.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -27,7 +30,10 @@ import { NavbarComponent } from '../navbar/navbar.component';
     ScreensRoutingModule,
     MatButtonModule,
     MatIconModule,
-    MatToolbarModule
+    MatToolbarModule,
+    HttpClientModule,
+    FormsModule, 
+    ReactiveFormsModule
   ]
 })
 export class ScreensModule { }

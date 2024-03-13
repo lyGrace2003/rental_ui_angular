@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { ScreensModule } from './screens/screens.module';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
+// import { HttpClientModule } from '@angular/common/http';
+// import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,9 +17,12 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     BrowserModule,
     AppRoutingModule,
     ScreensModule,
-    MatToolbarModule 
+    MatToolbarModule,
+    // HttpClientModule,
+    // FormsModule, 
+    // ReactiveFormsModule 
   ],
-  providers: [],
+  providers: [], 
   bootstrap: [AppComponent]
 })
 export class AppModule { }
