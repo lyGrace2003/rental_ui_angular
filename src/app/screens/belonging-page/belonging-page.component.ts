@@ -26,6 +26,7 @@ export class BelongingPageComponent {
       alert("Belonging Successfully Added");
       this.getAllBelongings();
     })
+    this.belongingname = "";
   }
 
   getAllBelongings(){

@@ -1,1 +1,28 @@
-<p>borrowed-page works!</p>
+<div class="body">
+    <div class="table-container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Freinds' Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr *ngFor="let FriendItem of FriendArray">
+                    <td>{{FriendItem.name}}</td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+    <div class="card">
+        <form>
+            <div class="input-container">
+                <div class="input-box">
+                <input type="text" name="friendname" id="friendname" placeholder="Enter friend's name">
+                </div>
+            <div class="button">
+            <button mat-raised-button color="warn" (click)="save()">Save rental</button>
+        </div>
+    </div>
+        </form>
+        </div>
+    </div>

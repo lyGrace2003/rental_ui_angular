@@ -26,6 +26,7 @@ export class FriendPageComponent {
       alert("Friend Successfully Added");
       this.getAllFriend();
     })
+    this.friendname="";
   }
 
   getAllFriend(){
